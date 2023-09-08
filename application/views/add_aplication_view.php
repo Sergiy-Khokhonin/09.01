@@ -1,5 +1,5 @@
 <form>
-<div class="mb-3">
+<div class="col-4">
     <label for="name" class="form-label">Адрес электронной почты</label>
     <input type="name" class="form-control" id="">
   </div>
@@ -13,7 +13,7 @@
   <option value="2"></option>
   <option value="3"></option>
 </select>
-<div class="mb-3">
+<div class="col-4">
   <label for="formFile" class="form-label">Пример ввода файла по умолчанию</label>
   <input class="form-control" type="file" id="formFile">
 </div>

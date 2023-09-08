@@ -16,15 +16,4 @@ class Applic extends CI_Controller{
         $this->load->view('temp/footer.php'); 
     }
 
-    public function add_application(){
-            
-        if(!empty($_POST)){
-            $name_application = $_POST['name_work'];
-            $descript = $_POST['descript'];
-            $id_user = $this->session->userdata('id_user');
-        
-    
-        redirect('Main/index');
-    
-    }}
 }
