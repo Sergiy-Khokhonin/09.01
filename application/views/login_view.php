@@ -1,4 +1,4 @@
-<form>
+<form method = 'POST' action="main/avtoriz">
   <div class="col-4">
     <label for="Login" class="form-label">Логин</label>
     <input type="text" class="form-control" id="login" name="login">

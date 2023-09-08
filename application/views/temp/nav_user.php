@@ -10,9 +10,12 @@
           <a class="nav-link active" aria-current="page" href="#">Главная</a>
         </li>
         <li class="nav-item dropdown dropdown-slide">
-               <a class="nav-link" href="">Личный кабинет</a>     
+               <a class="nav-link" href="Applic/index">Личный кабинет</a>     
          </li>
-         
+
+                 <li class="nav-item dropdown dropdown-slide">
+               <a class="nav-link" href="applic/add_application_view">Добавить заявку</a>     
+         </li>
 
       <ul class="navbar-nav ml-auto mt-10">
         <li class="nav-item">
