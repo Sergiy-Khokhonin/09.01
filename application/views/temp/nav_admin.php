@@ -13,7 +13,7 @@
                <a class="nav-link" href="">Просмотр заявок</a>     
          </li>
          <li class="nav-item dropdown dropdown-slide">
-               <a class="nav-link" href="">Управление Категориями</a>     
+               <a class="nav-link" href="Category/create_category_view">Управление Категориями</a>     
          </li>
 
       <ul class="navbar-nav ml-auto mt-10">

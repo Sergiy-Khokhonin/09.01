@@ -1,4 +1,4 @@
-<form medhod = "$_POST" action = "applic/add_application">
+<form medhod = "POST" action = "applic/add_application">
 <div class="col-4">
     <label for="name" class="form-label">Название </label>
     <input type="text" class="form-control" id="name" name="name">

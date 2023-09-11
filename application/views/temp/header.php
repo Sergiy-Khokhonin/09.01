@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Главная</title>
        <!-- FAVICON -->
-      <link href="images/favicon.png" rel="shortcut icon">
+       <link href="images/favicon.png" rel="shortcut icon">
 
       <!-- Bootstrap -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
