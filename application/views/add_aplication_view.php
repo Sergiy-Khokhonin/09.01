@@ -7,11 +7,14 @@
   <span class="input-group-text">Описание</span>
   <textarea class="form-control" aria-label="Описание" name ="discription"></textarea>
 </div>
+<
 <select class="form-select" aria-label="Категории">
   <option selected></option>
-  <option value="1"></option>
-  <option value="2"></option>
-  <option value="3"></option>
+  <?php
+  foreach($category as $row){
+  '<option value='.$row['name_category']'></option>';
+};
+?>
 </select>
 </div>
 <div class="col-4">

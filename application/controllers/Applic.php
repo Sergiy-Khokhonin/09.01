@@ -23,6 +23,6 @@ class Applic extends CI_Controller{
             $photo = $_POST['photo'];
 
         $this->load->model("Application_model");
-        $application = $this->discription->add_application($name_work, $discription);
+        $application = $this->discription->add_application($name, $discription);
     }
 }}

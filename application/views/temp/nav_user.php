@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Главная</a>
+          <a class="nav-link active" aria-current="page" href="main/index">Главная</a>
         </li>
         <li class="nav-item dropdown dropdown-slide">
                <a class="nav-link" href="Applic/index">Личный кабинет</a>     

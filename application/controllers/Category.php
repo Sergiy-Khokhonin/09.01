@@ -19,10 +19,12 @@ class Category extends CI_Controller{
         $name_category = $_POST['name_category'];
 
         $this->load->model("Category_model");
-        $this->category_model->create_category($name_category) ;
+        $this->Category_model->create_category($name_category) ;
+        $category = $this->discription->create_category($name_category);
         
-    
     } 
+
+    redirect('main/index');
 }
 
 }

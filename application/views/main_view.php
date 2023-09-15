@@ -1,38 +1,31 @@
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
+<section class="section">
+
+<div class = "container">
+  <div class = "row">
+    <div class = "col-2"></div>
+    <div class = "col-8">
+  <!-- Container Start -->
+  <div class="row row-cols-1 row-cols-md-4">
+<?php
+    $sql = "select * from application";
+ 
+    foreach($application as $row){
+    
+ echo'<div class="col mb-4">
     <div class="card">
-      <img src="" class="card-img-top" alt=".">
+      <img src="image/'.$row['img'].'" class="card-img-top" >
       <div class="card-body">
-        <h5 class="card-title">Заголовок карточки</h5>
-        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+        <h5 class="card-title">'.$row['name'].'
+        <h4 class="card-title">'.$row['name_category']'
+        <p class="card-text">'$row['Discription']'
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Заголовок карточки</h5>
-        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Заголовок карточки</h5>
-        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Заголовок карточки</h5>
-        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-      </div>
-    </div>
-  </div>
+  </div>';
+};
+?>
 </div>
+<div class = "col-2"></div>
+</div>
+</div>
+</div>
+</section>

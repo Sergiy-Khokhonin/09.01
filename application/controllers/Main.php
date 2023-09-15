@@ -69,6 +69,12 @@ public function avtoriz(){
 }
 
 
+public function destroy(){
 
-+
+    $this->session->sess_destroy();
+    redirect('main/login');
+    
 }
+}
+
+

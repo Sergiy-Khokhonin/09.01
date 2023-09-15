@@ -15,7 +15,7 @@
    <tbody>
 
 <?php
-foreach($work as $row){
+foreach($category as $row){
 
 
 echo
@@ -31,7 +31,6 @@ echo
 <form>
     
 </form>
-<button type="button" class="btn" >Базовый класс</button>
 </div>
 <div class = "col-2"></div>
 </div>
