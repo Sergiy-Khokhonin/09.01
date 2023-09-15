@@ -6,7 +6,11 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">Автор</th>
+      <th scope="col">Имя</th>
+      <th scope="col">Описание</th>
+      <th scope="col">Дата начала</th>
+      <th scope="col">Статус</th>
+      <th scope="col">Дата закрытия</th>
 
 
 
@@ -15,14 +19,17 @@
    <tbody>
 
 <?php
-foreach($category as $row){
+foreach($applications as $row){
 
 
 echo
 '<tr>
-      <td>'.$row['Name_category'].'</td>
-
-
+      <td>'.$row['name'].'</td>
+      <td>'.$row['discript'].'</td>
+      <td>'.$row['date_start'].'</td>
+      <td>'.$row['status'].'</td>
+      <td>'.$row['date_end'].'</td>
+      
     </tr>';
 }
 ?>

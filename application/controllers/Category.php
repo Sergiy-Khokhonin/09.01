@@ -14,6 +14,13 @@ class Category extends CI_Controller{
         $this->load->view('temp/footer.php'); 
     }
 
+    public function all_category_view(){
+        $this->load->view('temp/header.php');
+        $this->load->view('temp/nav_admin.php');
+        $this->load->view('all_category_view.php');
+        $this->load->view('temp/footer.php'); 
+    }
+
     public function create_category(){
         if(!empty($_POST)){
         $name_category = $_POST['name_category'];

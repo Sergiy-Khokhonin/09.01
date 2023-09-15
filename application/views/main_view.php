@@ -7,17 +7,16 @@
   <!-- Container Start -->
   <div class="row row-cols-1 row-cols-md-4">
 <?php
-    $sql = "select * from application";
  
-    foreach($application as $row){
+
+    foreach($applications as $row){
     
  echo'<div class="col mb-4">
     <div class="card">
-      <img src="image/'.$row['img'].'" class="card-img-top" >
+      <img src="image/'.$row['photo'].'" class="card-img-top" >
       <div class="card-body">
-        <h5 class="card-title">'.$row['name'].'
-        <h4 class="card-title">'.$row['name_category']'
-        <p class="card-text">'$row['Discription']'
+        <h5 class="card-title"'.$row['name'].'>
+        <p class="card-text"'.$row['discription'].'>
       </div>
     </div>
   </div>';

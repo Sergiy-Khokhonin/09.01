@@ -16,7 +16,10 @@ class Main extends CI_Controller{
          else{ 
             $this->load->view('temp/nav.php'); 
 }
-        $this->load->view('main_view.php');         
+$this->load->model("application_model");
+$data['applications'] = $this->application_model->select_application();
+
+        $this->load->view('main_view.php',$data);         
         $this->load->view('temp/footer.php'); 
     
         }
