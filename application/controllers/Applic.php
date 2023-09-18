@@ -12,13 +12,24 @@ class Applic extends CI_Controller{
     public function add_application_view(){
         $this->load->view('temp/header.php');
         $this->load->view('temp/nav_user.php');
-
         $this->load->model("application_model");
-        $data['applications'] = $this->application_model->select_application();
-
+        $data['application'] = $this->application_model->select_application();
         $this->load->view('add_aplication_view.php', $data);
         $this->load->view('temp/footer.php'); 
     }
+
+
+    public function vse_zav_view(){
+        $this->load->view('temp/header.php');
+        $this->load->view('temp/nav_user.php');
+        $this->load->model("application_model");
+        $data['application'] = $this->application_model->application_user();
+        $this->load->view('vse_zav_view.php', $data);
+        $this->load->view('temp/footer.php'); 
+    }
+    }
+
+
 
     public function add_application(){
         if(!empty($_POST)){
@@ -31,7 +42,10 @@ class Applic extends CI_Controller{
         
     }
 
-}
 
+
+public function delete_application(){
+    if(!empty($_GET))
+}
 
 }

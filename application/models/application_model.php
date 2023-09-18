@@ -11,4 +11,10 @@ class Application_model extends CI_Model{
 
     }
 
+    public function application_user($id_user){
+        $sql = 'SELECT * FROM work WHERE id_user = ?';
+        $result = $this->db->query($sql,array($id_user));
+        return $result->result_array();
+    }
+
     }

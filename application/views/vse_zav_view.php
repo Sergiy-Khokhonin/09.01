@@ -2,7 +2,7 @@
 <div class = "row">
 <div class = "col-2"></div>
 <div class = "col-8">
-<h3>Список Категории</h3>
+<h3>Список заказов</h3>
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -19,17 +19,14 @@
    <tbody>
 
 <?php
-foreach($applications as $row){
+foreach($application as $row){
 
 
 echo
 '<tr>
       <td>'.$row['name'].'</td>
-      <td>'.$row['discript'].'</td>
-      <td>'.$row['date_start'].'</td>
-      <td>'.$row['status'].'</td>
-      <td>'.$row['date_end'].'</td>
-      
+      <td>'.$row['discription'].'</td>
+
     </tr>';
 }
 ?>

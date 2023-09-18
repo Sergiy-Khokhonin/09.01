@@ -17,7 +17,8 @@ class Category extends CI_Controller{
     public function all_category_view(){
         $this->load->view('temp/header.php');
         $this->load->view('temp/nav_admin.php');
-        $this->load->view('all_category_view.php');
+        $data ['category'] = $this->category_model->select_category();
+        $this->load->view('all_category_view.php', $data);
         $this->load->view('temp/footer.php'); 
     }
 
@@ -25,9 +26,10 @@ class Category extends CI_Controller{
         if(!empty($_POST)){
         $name_category = $_POST['name_category'];
 
-        $this->load->model("Category_model");
-        $this->Category_model->create_category($name_category) ;
-        $category = $this->discription->create_category($name_category);
+        $this->load->model("category_model");
+        $this->category_model->create_category($name_category) ;
+        $data ['category'] = $this->category_model->create_category($name_category);
+        
         
     } 
 

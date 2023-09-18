@@ -3,7 +3,7 @@
 <div class="col-4"></div>
 <div class="col-4">
 
-<form method = 'POST' action="main/avtoriz">
+<form method ='POST' action="main/avtoriz">
 
   <div class="mb-3">
     <label for="Login" class="form-label">Логин</label>
