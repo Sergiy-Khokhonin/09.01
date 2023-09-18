@@ -33,11 +33,5 @@ class Applic extends CI_Controller{
 
 }
 
-    public function delete_application(){
-        if(!empty($_GET)){;
-            $del = $_GET['id_aplication']
 
-            $this->load->model("application_model");
-        }
-    }
 }
