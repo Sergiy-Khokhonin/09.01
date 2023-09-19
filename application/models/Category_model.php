@@ -6,13 +6,13 @@ class Category_model extends CI_Model{
         }
 
         public function select_category(){
-            $sql ="select * from categorys where 1"
+            $sql = "select * from categorys ";
             $result = $this->db->query($sql);
             return $result->result_array();
         }
 
         public function delete_category(){
-            $sql = "delete from categorys where ..."
+            $sql = "delete from categorys where ...";
             $result = $this->db->query($sql);
         }
 
